@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>InnTrack — Run your property without the spreadsheets</title>
+  <meta name="description" content="InnTrack is the reservations, rooms, calendar, housekeeping, and stats hub built for small hotels, motels, and guesthouses." />
+  <link rel="icon" type="image/png" href="images/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="nav">
+    <div class="container nav__inner">
+      <a href="#top" class="brand"><img src="images/logo.png" alt="InnTrack logo" /><span class="brand-word">Inn<span>Track</span></span></a>
+
+      <nav id="navLinks" class="nav__links">
+        <a href="#features">Features</a>
+        <a href="#calendar">Calendar</a>
+        <a href="#housekeeping">Housekeeping</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav__cta">
+        <a class="btn btn--primary btn--sm" href="#contact">Get Started</a>
+        <button id="navToggle" class="nav__toggle" aria-label="Toggle menu">&#9776;</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <h1 class="gradient-text">Run your motel or hotel <em>without</em> the spreadsheets.</h1>
+          <p class="lead">
+            Reservations, rooms, a live calendar, housekeeping, and revenue stats —
+            all in one place, instead of a notebook, a shared spreadsheet, and a
+            dozen sticky notes.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#contact">Get Started</a>
+            <a class="btn btn--ghost" href="#pricing">See Pricing</a>
+          </div>
+          <ul class="hero__trust">
+            <li>Built for small properties</li>
+            <li>Your data, your account</li>
+            <li>Pricing that scales with rooms</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container hero__shot">
+        <div class="tilt-card">
+          <div class="shot-frame border-glow-card">
+            <img src="images/dashboard.png" alt="InnTrack reservations calendar showing rooms and bookings for June 2026" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features" class="section-pad">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Features</span>
+          <h2 class="gradient-text">Everything a small property runs on.</h2>
+          <p>Eight tools that share one source of truth, so nothing gets double-booked or forgotten.</p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card border-glow-card">
+            <div class="feature-card__icon">📅</div>
+            <h3>Reservations</h3>
+            <p>Guest, room, dates, and price in one form. Totals are calculated automatically, and InnTrack blocks the save if a room is already booked for those nights.</p>
+          </div>
+          <div class="feature-card border-glow-card">
+            <div class="feature-card__icon">🚪</div>
+            <h3>Rooms</h3>
+            <p>Keep every room's number, type, and bed configuration on file, so quoting and assigning a stay takes seconds.</p>
+          </div>
+          <div class="feature-card border-glow-card">
+            <div class="feature-card__icon">🗓️</div>
+            <h3>Calendar</h3>
+            <p>A room-by-day timeline of every stay, color-coded by status. Click an empty day to start a booking, click a bar to open it.</p>
+          </div>
+          <div class="feature-card border-glow-card">
+            <div class="feature-card__icon">🧹</div>
+            <h3>Housekeeping</h3>
+            <p>A daily clean / in-progress / dirty board, auto-tagged with today's checkouts, arrivals, and stayovers.</p>
+          </div>
+          <div class="feature-card border-glow-card">
+            <div class="feature-card__icon">📊</div>
+            <h3>Stats</h3>
+            <p>Occupancy, revenue, average length of stay, revenue per room, and your busiest days — by month, by 30 days, or by year.</p>
+          </div>
+          <div class="feature-card border-glow-card">
+            <div class="feature-card__icon">🛠️</div>
+            <h3>Custom Made for your Needs</h3>
+            <p>Every property runs differently. InnTrack can be tailored to the workflow your team already uses instead of forcing you into someone else's.</p>
+          </div>
+          <div class="feature-card border-glow-card">
+            <div class="feature-card__icon">💬</div>
+            <h3>24/7 Support</h3>
+            <p>Real help, any time of day, whenever a booking or a guest needs a fast answer.</p>
+          </div>
+          <div class="feature-card border-glow-card">
+            <div class="feature-card__icon">🔐</div>
+            <h3>Account system</h3>
+            <p>A secure account for your property, with your data kept under your own login.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CALENDAR DEEP DIVE -->
+    <section id="calendar" class="section-pad">
+      <div class="container deep-dive">
+        <div class="deep-dive__copy">
+          <span class="eyebrow">Calendar</span>
+          <h3 class="gradient-text">A schedule that won't let you double-book a room.</h3>
+          <p class="lead">
+            Every room gets its own row, every stay its own colored bar. See the
+            whole month at a glance, and trust that what's on screen matches
+            what's actually booked.
+          </p>
+          <ul class="checklist">
+            <li>Room-by-day timeline for the full month</li>
+            <li>Color-coded by status — confirmed, checked-in, pending, checked-out, cancelled</li>
+            <li>Click any empty cell to start a new reservation pre-filled with that room and date</li>
+            <li>Built-in overlap check stops a room from being booked twice</li>
+          </ul>
+        </div>
+        <div class="deep-dive__media">
+          <div class="tilt-card">
+            <div class="shot-frame border-glow-card">
+              <img src="images/dashboard.png" alt="InnTrack calendar view with reservations across multiple rooms" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOUSEKEEPING DEEP DIVE -->
+    <section id="housekeeping" class="section-pad">
+      <div class="container deep-dive reverse">
+        <div class="deep-dive__copy">
+          <span class="eyebrow">Housekeeping</span>
+          <h3 class="gradient-text">Every room's status, at a glance, every morning.</h3>
+          <p class="lead">
+            Housekeeping opens to today's list already sorted: which rooms need a
+            turnover, which are mid-clean, and which are ready to sell — no
+            walking the halls to check.
+          </p>
+          <ul class="checklist">
+            <li>Three states per room: clean, in progress, dirty</li>
+            <li>Auto-flagged dirty the moment a guest checks out</li>
+            <li>Each room tagged with today's context — arriving, departing, stayover, or vacant</li>
+            <li>Filter the list by status to see exactly what's left to clean</li>
+          </ul>
+        </div>
+        <div class="deep-dive__media">
+          <div class="tilt-card">
+            <div class="shot-frame border-glow-card">
+              <img src="images/housekeeping.png" alt="InnTrack housekeeping board showing clean, in progress, and dirty room statuses" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="section-pad">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Stats</span>
+          <h2 class="gradient-text">Know how your property is actually doing.</h2>
+          <p>Occupancy, revenue, and stay-length numbers, updated as bookings come in — no month-end spreadsheet required.</p>
+        </div>
+
+        <div class="tilt-card">
+          <div class="shot-frame border-glow-card">
+            <img src="images/statistics.png" alt="InnTrack statistics dashboard showing occupancy, revenue, and busiest days" />
+          </div>
+        </div>
+
+        <div class="stats-strip">
+          <div class="stat-tile"><strong>Occupancy %</strong><span>Room-nights sold vs. capacity</span></div>
+          <div class="stat-tile"><strong>Revenue</strong><span>By confirmed &amp; completed stays</span></div>
+          <div class="stat-tile"><strong>Avg. stay</strong><span>Length of stay across bookings</span></div>
+          <div class="stat-tile"><strong>Revenue / room</strong><span>Ranked, so you see your top earners</span></div>
+          <div class="stat-tile"><strong>Busiest days</strong><span>Top days and occupancy by weekday</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROPERTY TYPES -->
+    <section class="section-pad">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Built for</span>
+          <h2 class="gradient-text">Made for small, independent properties.</h2>
+          <p>If you run a single property with a handful of rooms, InnTrack fits the way you already work.</p>
+        </div>
+
+        <div class="property-grid">
+          <div class="property-card border-glow-card"><span class="tag">🏨</span><h4>Motels</h4><p>Roadside stays with fast, walk-in turnover.</p></div>
+          <div class="property-card border-glow-card"><span class="tag">🛎️</span><h4>Hotels</h4><p>Front-desk bookings and daily housekeeping in sync.</p></div>
+          <div class="property-card border-glow-card"><span class="tag">🏡</span><h4>Guesthouses</h4><p>A handful of rooms, run without extra staff.</p></div>
+          <div class="property-card border-glow-card"><span class="tag">🎒</span><h4>Hostels</h4><p>Fast turnover across many small rooms.</p></div>
+          <div class="property-card border-glow-card"><span class="tag">🌿</span><h4>Small resorts</h4><p>Track every room and every stay in one calendar.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing" class="section-pad">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Pricing</span>
+          <h2 class="gradient-text">Pay for the size of the property you run.</h2>
+          <p>One yearly price, based on your room count. No setup fees.</p>
+        </div>
+
+        <div class="pricing-grid">
+          <div class="price-card border-glow-card">
+            <h3>Starter</h3>
+            <p class="price-sub">For small properties just getting organized.</p>
+            <div class="price">€150<small>/ year</small></div>
+            <div class="rooms">0–15 rooms</div>
+            <ul>
+              <li>Reservations &amp; overlap protection</li>
+              <li>Room management</li>
+              <li>Full calendar view</li>
+              <li>Housekeeping board</li>
+              <li>Stats &amp; reporting</li>
+            </ul>
+            <a class="btn btn--ghost btn--block js-plan" data-plan="Starter (0–15 rooms, €150/yr)" href="#contact">Get Started</a>
+          </div>
+
+          <div class="price-card price-card--featured border-glow-card">
+            <span class="price-card__badge">Most popular</span>
+            <h3>Standard</h3>
+            <p class="price-sub">For properties with a growing room count.</p>
+            <div class="price">€350<small>/ year</small></div>
+            <div class="rooms">16–25 rooms</div>
+            <ul>
+              <li>Everything in Starter</li>
+              <li>Reservations &amp; overlap protection</li>
+              <li>Room management</li>
+              <li>Full calendar view</li>
+              <li>Housekeeping board</li>
+              <li>Stats &amp; reporting</li>
+            </ul>
+            <a class="btn btn--primary btn--block js-plan" data-plan="Standard (16–25 rooms, €350/yr)" href="#contact">Get Started</a>
+          </div>
+
+          <div class="price-card border-glow-card">
+            <h3>Pro</h3>
+            <p class="price-sub">For larger properties running at scale.</p>
+            <div class="price">€450<small>/ year</small></div>
+            <div class="rooms">26+ rooms</div>
+            <ul>
+              <li>Everything in Standard</li>
+              <li>Reservations &amp; overlap protection</li>
+              <li>Room management</li>
+              <li>Full calendar view</li>
+              <li>Housekeeping board</li>
+              <li>Stats &amp; reporting</li>
+            </ul>
+            <a class="btn btn--ghost btn--block js-plan" data-plan="Pro (26+ rooms, €450/yr)" href="#contact">Get Started</a>
+          </div>
+        </div>
+
+        <div class="negotiate border-glow-card">
+          <h4>Somewhere in between? Let's talk numbers.</h4>
+          <p>Room counts, seasonal properties, and multi-year terms don't always fit neatly into three tiers — pricing is negotiable, so tell us about your property and we'll work out a plan that fits.</p>
+          <a class="btn btn--primary js-plan" data-plan="Custom / negotiated pricing" href="#contact">Talk to us about pricing</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-band">
+      <div class="container">
+        <h2 class="gradient-text">Ready to get your property off the spreadsheet?</h2>
+        <p>Tell us a bit about your rooms and we'll get you set up.</p>
+        <a class="btn btn--primary" href="#contact">Get Started</a>
+      </div>
+    </section>
+
+    <!-- CONTACT FORM -->
+    <section id="contact" class="section-pad">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Contact</span>
+          <h2 class="gradient-text">Fill in the form, we'll take it from there.</h2>
+          <p>Tell us about your property and we'll get back to you at the email you provide.</p>
+        </div>
+
+        <form id="contactForm" class="contact-form border-glow-card" action="https://formsubmit.co/ajax/mkhighlevel@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="InnTrack — new website inquiry" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="plan" id="planField" value="" />
+
+          <label>
+            Name
+            <input type="text" name="name" placeholder="Your name" required />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" placeholder="you@yourproperty.com" required />
+          </label>
+          <label>
+            Property &amp; rooms
+            <input type="text" name="property" placeholder="e.g. Riverside Motel, 12 rooms" />
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="4" placeholder="Tell us a bit about what you need"></textarea>
+          </label>
+
+          <button type="submit" class="btn btn--primary btn--block">Send</button>
+          <p class="contact-form__status" aria-live="polite"></p>
+          <p class="contact-form__fallback">Prefer email? Write to us directly at <a href="mailto:mkhighlevel@gmail.com">mkhighlevel@gmail.com</a>.</p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#top" class="footer__brand"><img src="images/logo.png" alt="InnTrack logo" /><span class="brand-word">Inn<span>Track</span></span></a>
+      <nav class="footer__links">
+        <a href="#features">Features</a>
+        <a href="#calendar">Calendar</a>
+        <a href="#housekeeping">Housekeeping</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <p class="footer__meta">&copy; 2026 InnTrack. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
