@@ -1,57 +1,55 @@
-# InnTrack
+# inntrackpage
 
-Property management software for small accommodation businesses — guesthouses, motels and villas around Lake Ohrid and Struga, North Macedonia.
+The marketing site for **InnTrack** — property management software for small accommodation businesses around Lake Ohrid and Struga, North Macedonia.
 
 **Live:** [inntrackpage.vercel.app](https://inntrackpage.vercel.app)
 
-## The problem
+> Looking for the product itself? That lives in [rronnnnn/inntrack](https://github.com/rronnnnn/inntrack).
 
-Small properties in the region run on paper ledgers, WhatsApp messages and a whiteboard behind reception. Existing property management systems are priced and designed for hotel chains — too expensive, too complex, and rarely localised. InnTrack targets the ten-to-thirty-room operator who needs to know who is arriving today and which rooms are clean.
+## About
 
-## What it does
+A landing page written for a specific reader: the owner of a ten-to-thirty-room guesthouse who currently runs bookings on paper and has never bought software before. The copy leads with the daily problem rather than the feature list, and the page is built to load fast on a phone over mobile data, because that is how the audience will see it.
 
-- **Availability calendar** — a room-by-night grid showing occupancy at a glance, with drag-free booking entry
-- **Reservations** — guest details, stay dates, rates and status in one place
-- **Housekeeping** — per-room cleaning status that updates as guests check in and out
-- **Statistics** — occupancy rate and revenue over a selected period
-- **Installable** — a progressive web app, so reception staff can run it from a phone or tablet without an app store
+## What's here
+
+- Hero with the core positioning and primary call to action
+- Problem framing aimed at operators running paper ledgers and whiteboards
+- Feature walkthrough — availability calendar, reservations, housekeeping, statistics
+- Product screenshots
+- Pricing
+- Contact and enquiry route into the sales conversation
 
 ## Stack
 
 | | |
 |---|---|
-| Framework | Next.js |
-| Database & auth | Supabase (PostgreSQL) |
+| Markup | HTML |
 | Styling | CSS |
-| Delivery | Progressive Web App — installable, custom splash screen and icons |
 | Hosting | Vercel |
+
+Static and dependency-free by choice. A marketing page has no reason to ship a framework, and the result loads immediately on a slow connection.
 
 ## Running locally
 
 ```bash
 git clone https://github.com/rronnnnn/inntrackpage.git
 cd inntrackpage
-npm install
 ```
 
-Create a `.env.local` file:
-
-```
-NEXT_PUBLIC_SUPABASE_URL=your-project-url
-NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key
-```
-
-Then:
+Open `index.html` directly, or serve it:
 
 ```bash
-npm run dev
+npx serve .
 ```
 
-Open [http://localhost:3000](http://localhost:3000).
+## Deployment
 
-## Status
+Pushes to `main` deploy automatically through Vercel.
 
-In active development and seeking its first production properties. Built and maintained by [Rron Tuda](https://github.com/rronnnnn) under [High Level](https://www.highlevel.mk).
+## Related
+
+- [rronnnnn/inntrack](https://github.com/rronnnnn/inntrack) — the InnTrack application
+- [High Level](https://www.highlevel.mk) — the studio behind it
 
 ## Contact
 
